@@ -13,7 +13,7 @@ Allow advanced hotswap support in JVM(dcevm) running in Docker container.
 
 Each folder represents a Dockerfile which can be build by executing the `build.sh` command. 
 
-### Add hotswap support in docker container to your project
+### Add docker container hotswap support to your project
 
 Copy following files from [reference project](https://github.com/skybber/ping) to your project:
 
