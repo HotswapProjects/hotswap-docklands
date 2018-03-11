@@ -15,7 +15,7 @@ Each folder represents a Dockerfile which can be build by executing the `build.s
 
 ### Add hotswap support in docker container to your project
 
-Copy following files from [reference project](https://github.com/hotswapagent/ping) to your project:
+Copy following files from [reference project](https://github.com/skybber/ping) to your project:
 
 1. [Dockerfile](https://github.com/skybber/ping/blob/master/Dockerfile) 
   * modify name of `ping.war` to `your_project.war`
