@@ -1,15 +1,15 @@
 FROM hotswapagent/hotswap-vm
 LABEL maintainer="hotswapagent.org" description="OpenLiberty Kernel"
-ENV RELEASE 2017-09-27_1951
-ENV VERSION 17.0.0.3
+
+ENV LIBERTY_VERSION 17.0.0.4
 ENV INSTALL_DIR /opt/ibm
 
 # Download OpenLiberty
-ENV OPENLIBERTY_HOME ${INSTALL_DIR}/openliberty-${VERSION}
+ENV OPENLIBERTY_HOME ${INSTALL_DIR}/openliberty-${LIBERTY_VERSION}
 ENV DEPLOYMENT_DIR ${OPENLIBERTY_HOME}/standalone/deployments/
-RUN curl -O https://public.dhe.ibm.com/ibmdl/export/pub/software/openliberty/runtime/release/${RELEASE}/openliberty-${VERSION}.zip \
-    && unzip openliberty-${VERSION}.zip -d ${INSTALL_DIR} \
-    && rm openliberty-${VERSION}.zip
+RUN curl -O https://repo1.maven.org/maven2/io/openliberty/openliberty-runtime/${LIBERTY_VERSION}/openliberty-runtime-${LIBERTY_VERSION}.zip \
+    && unzip openliberty-runtime-${LIBERTY_VERSION}.zip -d ${INSTALL_DIR} \
+    && rm openliberty-runtime-${LIBERTY_VERSION}.zip
 ENV PATH=/opt/ibm/wlp/bin:$PATH
 
 # Set Path Shortcuts
