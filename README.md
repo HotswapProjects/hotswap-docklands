@@ -11,7 +11,7 @@ Allow advanced hotswap support in JVM(dcevm) running in Docker container.
 
 ### Install desired container image
 
-Each folder represents a Dockerfile which can be build by executing the `build.sh` command. 
+Each folder represents a Dockerfile which can be built by executing the `build.sh` command. 
 
 ### Add docker container hotswap support to your project
 
