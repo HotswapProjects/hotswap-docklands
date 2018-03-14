@@ -5,7 +5,7 @@ Adam Bien's Docklands with HotswapAgent and DCEVM.
 
 ## Motivation:
 
-Allow advanced hotswap support in JVM(dcevm) running in Docker container.
+Allow advanced hotswap support for JVM (dcevm) running in Docker container.
 
 ## Quick start:
 
