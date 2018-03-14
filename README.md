@@ -27,4 +27,4 @@ Copy following files from [reference project](https://github.com/skybber/ping) t
   * Debug your application attaching your debugger to port `8000`
   * Make some advance code change in your project and build the project. Class changes are automatically promoted to running docker container via debugger. Even if the debugger is not attached, the class changes are promoted via `extra_class_path`, that is used prior standard classpath.
 
-HotswapAgent allows to add a directory prior to webapp path (load webapp resources) using property `webappDir`. For proper functionality of `webappDir` it is necessary to add `-v /var/run/docker.sock:/var/run/docker.sock` docker command.
+HotswapAgent allows to add a directory prior to webapp path (load webapp resources) using property `webappDir`. For proper functionality of `webappDir` it is necessary to add `-v /var/run/docker.sock:/var/run/docker.sock` to docker command.
