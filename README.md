@@ -5,7 +5,7 @@ Adam Bien's Docklands with HotswapAgent and DCEVM.
 
 ## Motivation:
 
-Allow advanced hotswap support for JVM (dcevm) running in Docker container.
+Add advanced hotswap support allowing **addition/modification/removal** of **classes/methods/fields** of application running in **Docker** without restarts. Inject new code/resources (html/xhtml etc..) from your IDE to application running in Docker without restarts.
 
 ## Quick start:
 
