@@ -20,6 +20,7 @@ Copy following files from [reference project](https://github.com/skybber/ping) t
 1. [Dockerfile](https://github.com/skybber/ping/blob/master/Dockerfile) 
   * modify name of `ping.war` to `your_project.war`
   * optionally modify parent image name `FROM` to desired container image name
+  * optionally change exposed debug port 8000
 2. [hotswap-agent.properties](https://github.com/skybber/ping/blob/master/src/main/resources/hotswap-agent.properties) to your project's `resources` directory.
 3. [buildAndRunDebug.sh](https://github.com/skybber/ping/blob/master/buildAndRunDebug.sh) 
   * rename destination image name from `hotswap-ping` to something else
