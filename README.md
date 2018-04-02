@@ -23,8 +23,9 @@ Copy following files from [reference project](https://github.com/skybber/ping) t
   * optionally change exposed debug port 8000
 2. [hotswap-agent.properties](https://github.com/skybber/ping/blob/master/src/main/resources/hotswap-agent.properties) to your project's `resources` directory.
 3. [buildAndRunDebug.sh](https://github.com/skybber/ping/blob/master/buildAndRunDebug.sh) 
-  * rename destination image name from `hotswap-ping` to something else
-4. run `buildAndRunDebug.sh`
+  * rename target image name from `hotswap-ping` to something different
+  
+Build & execute dockerized application using `buildAndRunDebug.sh` script. Next:
   * Debug your application attaching your debugger to port `8000`
   * Make some advance code change in your project and build the project. Class changes are automatically promoted to running docker container via debugger. Even if the debugger is not attached, the class changes are promoted via `extra_class_path`, that is used prior standard classpath.
 
