@@ -1,7 +1,7 @@
 FROM hotswapagent/hotswap-vm
 LABEL maintainer="hotswapagent.org" description="OpenLiberty Kernel"
 
-ENV LIBERTY_VERSION 18.0.0.4
+ENV LIBERTY_VERSION 19.0.0.2
 ENV INSTALL_DIR /opt/ibm
 
 # Download OpenLiberty
