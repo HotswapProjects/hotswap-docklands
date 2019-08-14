@@ -4,4 +4,5 @@ RUN apk -U upgrade \
     && apk add curl \
     && apk add unzip \
     && mkdir -p /opt/hotswap-agent/ \
-    && curl -L -o /opt/hotswap-agent/hotswap-agent-1.3.0.jar "https://github.com/HotswapProjects/HotswapAgent/releases/download/RELEASE-1.3.0/hotswap-agent-1.3.0.jar"
+    && curl -L -o /opt/hotswap-agent/hotswap-agent-1.3.1-SNAPSHOT.jar "https://github.com/HotswapProjects/HotswapAgent/releases/download/1.3.1-SNAPSHOT/hotswap-agent-1.3.1-SNAPSHOT.jar" \
+    && ln -f -s /opt/hotswap-agent/hotswap-agent-1.3.1-SNAPSHOT.jar /opt/hotswap-agent/hotswap-agent.jar
