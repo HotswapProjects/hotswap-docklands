@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t hotswapagent/tomee .
+docker build --no-cache -t hotswapagent/tomee .

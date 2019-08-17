@@ -1,2 +1,2 @@
 #!/usr/bin/bash
-docker build -t hotswapagent/hotswap-vm .
+docker build --no-cache -t hotswapagent/hotswap-vm .

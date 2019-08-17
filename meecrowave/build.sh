@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t hotswapagent/meecrowave .
+docker build --no-cache -t hotswapagent/meecrowave .

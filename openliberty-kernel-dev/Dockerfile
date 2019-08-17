@@ -1,7 +1,7 @@
 FROM hotswapagent/hotswap-vm
 LABEL maintainer="hotswapagent.org" description="OpenLiberty Kernel Development Builds"
-ENV RELEASE 2019-02-22_1311
-ENV VERSION 19.0.0.2
+ENV RELEASE 2019-08-13_1136
+ENV VERSION 19.0.0.8
 ENV INSTALL_DIR /opt/
 
 # Download OpenLiberty

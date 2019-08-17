@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t hotswapagent/wildfly .
+docker build --no-cache -t hotswapagent/wildfly .

@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t hotswapagent/openliberty-webprofile7 .
+docker build --no-cache -t hotswapagent/openliberty-webprofile8 .

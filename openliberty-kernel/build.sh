@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t hotswapagent/openliberty-kernel .
+docker build --no-cache -t hotswapagent/openliberty-kernel .

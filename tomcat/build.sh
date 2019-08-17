@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t hotswapagent/tomcat .
+docker build --no-cache -t hotswapagent/tomcat .

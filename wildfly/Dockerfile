@@ -1,6 +1,6 @@
 FROM hotswapagent/hotswap-vm
 LABEL maintainer="hotswapagent.org" description="Java EE7 Full & Web Distribution"
-ENV VERSION 11.0.0.Final
+ENV VERSION 17.0.1.Final
 ENV INSTALL_DIR /opt
 ENV WILDFLY_HOME ${INSTALL_DIR}/wildfly-${VERSION}
 ENV DEPLOYMENT_DIR ${WILDFLY_HOME}/standalone/deployments/
@@ -12,6 +12,7 @@ RUN curl -O https://download.jboss.org/wildfly/${VERSION}/wildfly-${VERSION}.zip
     && chown -R serveradmin:serveradmin /opt \
     && chmod a+x ${WILDFLY_HOME}/bin/standalone.sh \
     && chmod -R a+rw ${INSTALL_DIR}
+RUN mkdir -p /extra_class_path
 USER serveradmin
 ENTRYPOINT ${WILDFLY_HOME}/bin/standalone.sh -b=0.0.0.0
 EXPOSE 8080
